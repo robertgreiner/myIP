@@ -10,6 +10,17 @@ Usage
 
 Navigate to the page and your IP address will be displayed.
 
+Code
+------
+
+    private string GetExternalIp() {
+        string ip = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+        if (String.IsNullOrEmpty(ip)) {
+            ip = Request.ServerVariables["REMOTE_ADDR"];
+        }
+        return ip;
+    }
+
 Copyright
 ---------
 
