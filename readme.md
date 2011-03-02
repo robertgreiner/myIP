@@ -3,6 +3,8 @@ myIP
 
 just goofing off with ASP .NET and HttpContext.Current.Request.ServerVariables
 
+Note: If you run this on your local machine you will get 127.0.0.1 as a result.
+
 Usage
 -----
 
